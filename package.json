@@ -1,14 +1,18 @@
 {
   "name": "portafoliofernandoalmaraz",
+  "homepage": "https://FernandoAlmaraz.github.io/PortafolioFernandoAlmaraz/",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "astro": "^5.16.16"
+    "astro": "^5.16.16",
+    "gh-pages": "^6.3.0"
   }
 }
