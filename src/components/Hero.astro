@@ -1,0 +1,80 @@
+---
+---
+<section id="hero" class="container hero-section">
+  <div class="hero-content">
+    <span class="badge">Systems Engineer</span>
+    <h1 class="text-gradient">Architecting the Software <br/> of the Future</h1>
+    <p>
+      Specialized in cloud infrastructure, scalable backend systems, and modern web architectures. 
+      I transform complex problems into elegant, efficient, and robust technical solutions.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-secondary">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    padding: 10rem 0 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .badge {
+    background: var(--secondary);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
+  h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 900px;
+  }
+  p {
+    font-size: 1.25rem;
+    color: var(--muted);
+    max-width: 650px;
+    margin-bottom: 3rem;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px var(--primary-glow);
+    transition: transform 0.3s ease;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+  }
+  .btn-secondary {
+    border: 1px solid var(--border);
+    color: var(--foreground);
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  .btn-secondary:hover {
+    background: var(--secondary);
+  }
+
+  @media (max-width: 768px) {
+    h1 { font-size: 3rem; }
+    p { font-size: 1.1rem; }
+  }
+</style>
