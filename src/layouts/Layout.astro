@@ -40,5 +40,77 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 	</head>
 	<body>
 		<slot />
+
+		<a href="#" id="back-to-top" aria-label="Volver al inicio">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<line x1="12" y1="19" x2="12" y2="5"></line>
+				<polyline points="5 12 12 5 19 12"></polyline>
+			</svg>
+		</a>
+		
+		<style>
+			#back-to-top {
+				position: fixed;
+				bottom: 2.5rem;
+				right: 2.5rem;
+				background: var(--primary);
+				color: white;
+				width: 3.2rem;
+				height: 3.2rem;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(20px);
+				transition: all 0.3s ease;
+				z-index: 1000;
+				box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+			}
+			#back-to-top.show {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+			}
+			#back-to-top:hover {
+				background: var(--secondary);
+				transform: translateY(-3px) scale(1.05);
+			}
+			@media (max-width: 768px) {
+				#back-to-top {
+					bottom: 1.5rem;
+					right: 1.5rem;
+					width: 2.8rem;
+					height: 2.8rem;
+				}
+			}
+		</style>
+
+		<script is:inline>
+			const initBackToTop = () => {
+				const btn = document.getElementById('back-to-top');
+				if (!btn) return;
+				
+				window.addEventListener('scroll', () => {
+					if (window.scrollY > 400) {
+						btn.classList.add('show');
+					} else {
+						btn.classList.remove('show');
+					}
+				});
+
+				btn.addEventListener('click', (e) => {
+					e.preventDefault();
+					window.scrollTo({
+						top: 0,
+						behavior: 'smooth'
+					});
+				});
+			};
+			
+			initBackToTop();
+			document.addEventListener('astro:page-load', initBackToTop);
+		</script>
 	</body>
 </html>

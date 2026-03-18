@@ -11,6 +11,15 @@ import Footer from '../components/Footer.astro';
 
 <Layout title="Systems Engineer Portfolio">
 	<Navbar />
+	<script is:inline>
+		if (!localStorage.getItem('manual_lang')) {
+			const userLang = navigator.language || navigator.userLanguage;
+			if (userLang.startsWith('en')) {
+				const cp = window.location.pathname;
+				window.location.replace(cp.endsWith('/') ? cp + 'en/' : cp + '/en/');
+			}
+		}
+	</script>
 	<main>
 		<Hero />
 		<div class="separator"></div>

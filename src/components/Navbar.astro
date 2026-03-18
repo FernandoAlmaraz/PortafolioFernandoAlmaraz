@@ -55,9 +55,9 @@ const base = rawBase.endsWith("/") ? rawBase : rawBase + "/";
       >
       <ThemeToggle />
       <div class="lang-picker">
-        <a href={base} class={lang === "es" ? "active" : ""}>ES</a>
+        <a href={base} class={lang === "es" ? "active" : ""} onclick="localStorage.setItem('manual_lang', 'true');">ES</a>
         <span>|</span>
-        <a href={`${base}en/`} class={lang === "en" ? "active" : ""}>EN</a>
+        <a href={`${base}en/`} class={lang === "en" ? "active" : ""} onclick="localStorage.setItem('manual_lang', 'true');">EN</a>
       </div>
     </div>
   </div>
