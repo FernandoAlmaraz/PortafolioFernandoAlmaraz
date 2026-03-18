@@ -1,61 +1,114 @@
 ---
 const experiences = [
   {
-    company: "Reborn",
+    company: "Reborn Developments",
     role: "Software Engineer (Chatbots & Fullstack)",
-    date: "Jun 2025 - Oct 2026",
+    date: "Dec 2025 - May 2026",
     description: "Chatbot with IA & FullStack Development",
-    technologies: ["LangChain", "LangGraph", "Docker", "Astro", "JavaScript", "PHP", "Laravel"]
+    technologies: [
+      "LangChain",
+      "LangGraph",
+      "Python",
+      "FastAPI",
+      "Docker",
+      "Astro",
+      "JavaScript",
+      "PHP",
+      "Laravel",
+    ],
+  },
+  {
+    company: "Profunded",
+    role: "Software Engineer (Chatbots & Fullstack)",
+    date: "Jun 2025 - Dec 2025",
+    description: "Chatbot with IA & FullStack Development",
+    technologies: [
+      "LangChain",
+      "LangGraph",
+      "Python",
+      "FastAPI",
+      "Docker",
+      "Astro",
+      "JavaScript",
+      "PHP",
+      "Laravel",
+    ],
   },
   {
     company: "Fusion Pax",
     role: "Ingeniero en IA & Automatización",
     date: "Jun 2025 - Sep 2025",
     description: "Automatización y desarrollo con IA.",
-    technologies: ["Python", "N8N", "LangChain", "Docker"]
+    technologies: ["Python", "N8N", "LangChain", "Docker"],
   },
   {
     company: "EasyContact",
     role: "Software Engineer (Chatbots & Fullstack)",
     date: "Jan 2024 - Mar 2025",
     description: "Chatbot with IA & FullStack Development / HALF DAY",
-    technologies: ["Python", "LangChain", "LangGraph", "Google Cloud Platform", "Docker", "Angular", "PHP", "Laravel"]
+    technologies: [
+      "Python",
+      "LangChain",
+      "LangGraph",
+      "Google Cloud Platform",
+      "Docker",
+      "Angular",
+      "PHP",
+      "Laravel",
+    ],
   },
   {
     company: "DATEC",
     role: "Analytical Engineer",
     date: "Apr 2024 - Jul 2025",
     description: "Data Analysis, Web Development, Research, Data Warehouse.",
-    technologies: ["Python", "SQL", "SAP DataSphere", "SAC SAP Analytics Cloud", "Google Cloud Platform", "Looker Studio"]
+    technologies: [
+      "Python",
+      "SQL",
+      "SAP DataSphere",
+      "SAC SAP Analytics Cloud",
+      "Google Cloud Platform",
+      "Looker Studio",
+    ],
   },
   {
     company: "Bamboo Tec",
-    role: "Pasantía: Fullstack Web Development",
+    role: "Pasantía: Fullstack Web Development - BI & Analytics",
     date: "Jul 2022 - Dec 2022",
-    description: "Analysis of data, development of ETL processes and research.",
-    technologies: ["Python", "JavaScript", "Pandas", "NumPy", "Power BI"]
-  }
+    description:
+      "Analysis of data, development of ETL processes, research and web development.",
+    technologies: [
+      "Python",
+      "JavaScript",
+      "Pandas",
+      "NumPy",
+      "Power BI",
+      "ODOO",
+    ],
+  },
 ];
 ---
 
 <section id="experience" class="container experience-section">
   <h2 class="section-title">Experiencia Profesional</h2>
   <div class="timeline">
-    {experiences.map((exp, index) => (
-      <div class="timeline-item">
-        <div class="timeline-content glass">
-          <div class="time">{exp.date}</div>
-          <h3 class="title">{exp.role}</h3>
-          <div class="company">{exp.company}</div>
-          <p class="description">{exp.description}</p>
-          <div class="tags">
-            {exp.technologies.map(tech => (
-              <span class="tag">{tech}</span>
-            ))}
+    {
+      experiences.map((exp, index) => (
+        <div class="timeline-item">
+          <div class="timeline-content glass">
+            <div class="time">{exp.date}</div>
+            <h3 class="title">{exp.role}</h3>
+            <div class="company">{exp.company}</div>
+            <p class="description">{exp.description}</p>
+            <div class="tags">
+              {exp.technologies.map((tech) => (
+                <span class="tag">{tech}</span>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    ))}
+      ))
+    }
   </div>
 </section>
 
@@ -74,7 +127,7 @@ const experiences = [
     margin: 0 auto;
   }
   .timeline::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
     background: var(--border);
@@ -90,7 +143,7 @@ const experiences = [
     width: 50%;
   }
   .timeline-item::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 20px;
     height: 20px;
