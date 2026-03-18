@@ -128,13 +128,21 @@ const experiences = experiencesData[lang];
     .timeline-item {
       width: 100%;
       padding-left: 70px;
-      padding-right: 25px;
+      padding-right: 0px;
     }
-    .timeline-item::after {
+    .timeline-item::after, 
+    .timeline-item:nth-child(even)::after {
       left: 21px;
+      right: auto;
     }
     .timeline-item:nth-child(even) {
       left: 0%;
+    }
+    .timeline-content {
+      padding: 15px 20px;
+    }
+    .title {
+      font-size: 1.1rem;
     }
   }
 </style>
