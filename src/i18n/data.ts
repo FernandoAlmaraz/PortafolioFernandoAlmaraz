@@ -123,42 +123,22 @@ export const experiencesData = {
 export const projectsData = {
   es: [
     {
-      title: "Sistema de Riesgos Cardíacos",
-      description: "Sistema web basado en aprendizaje automático para apoyo a la determinación de riesgos cardíacos. (Proyecto de Titulación)",
-      tech: ["Angular 15", "Flask", "Python", "MySQL", "Scikit-learn"],
-      link: "https://github.com/FernandoAlmaraz"
-    },
-    {
-      title: "Chatbots & Fullstack Dev",
-      description: "Desarrollo de chatbots con IA y soluciones fullstack para EasyContact y Reborn.",
-      tech: ["LangChain", "LangGraph", "Docker", "Angular", "Laravel"],
-      link: "https://github.com/FernandoAlmaraz"
-    },
-    {
-      title: "Data Analysis & ETL",
-      description: "Análisis de datos, desarrollo de procesos ETL e investigación de herramientas de datos en DATEC y Bamboo Tec.",
-      tech: ["Python", "Pandas", "Power BI", "SAP DataSphere"],
-      link: "https://github.com/FernandoAlmaraz"
+      title: "Portafolio Personal",
+      description: "Mi portafolio desarrollador, construido con Astro. Cuenta con un rendimiento instantáneo, modo oscuro (Dark Mode), diseño 100% responsivo y soporte multilingüe en tiempo real. Código abierto en GitHub.",
+      image: "portfolio-preview.png",
+      tech: ["Astro", "TypeScript", "CSS", "JavaScript"],
+      link: "https://fernandoalmaraz.github.io/PortafolioFernandoAlmaraz/",
+      github: "https://github.com/FernandoAlmaraz/PortafolioFernandoAlmaraz"
     }
   ],
   en: [
     {
-      title: "Cardiac Risk System",
-      description: "Machine learning based web system to support the determination of cardiac risks. (Degree Project)",
-      tech: ["Angular 15", "Flask", "Python", "MySQL", "Scikit-learn"],
-      link: "https://github.com/FernandoAlmaraz"
-    },
-    {
-      title: "Chatbots & Fullstack Dev",
-      description: "Development of AI chatbots and fullstack solutions for EasyContact and Reborn.",
-      tech: ["LangChain", "LangGraph", "Docker", "Angular", "Laravel"],
-      link: "https://github.com/FernandoAlmaraz"
-    },
-    {
-      title: "Data Analysis & ETL",
-      description: "Data analysis, ETL processes development, and data tools research at DATEC and Bamboo Tec.",
-      tech: ["Python", "Pandas", "Power BI", "SAP DataSphere"],
-      link: "https://github.com/FernandoAlmaraz"
+      title: "Personal Portfolio",
+      description: "My personal developer portfolio built with Astro. Features blazing fast performance, a dark mode switch, a fully mobile-responsive UI, and real-time multi-language support. Open source on GitHub.",
+      image: "portfolio-preview.png",
+      tech: ["Astro", "TypeScript", "CSS", "JavaScript"],
+      link: "https://fernandoalmaraz.github.io/PortafolioFernandoAlmaraz/en/",
+      github: "https://github.com/FernandoAlmaraz/PortafolioFernandoAlmaraz"
     }
   ]
 };
