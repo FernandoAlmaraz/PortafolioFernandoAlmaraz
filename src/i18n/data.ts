@@ -1,3 +1,34 @@
+export const educationData = {
+  es: [
+    {
+      title: "Ingeniería de Sistemas Informáticos",
+      institution: "Universidad Privada del Valle (UNIVALLE)",
+      type: "Grado Universitario",
+      description: "Formación integral en desarrollo de software, arquitectura de sistemas, análisis de datos e inteligencia artificial."
+    },
+    {
+      title: "Diplomado en Desarrollo Web",
+      institution: "Universidad Privada del Valle (UNIVALLE)",
+      type: "Postgrado / Diplomado",
+      description: "Especialización avanzada en tecnologías web modernas, arquitectura de software frontend y ecosistemas web backend."
+    }
+  ],
+  en: [
+    {
+      title: "Computer Systems Engineering",
+      institution: "Universidad Privada del Valle (UNIVALLE)",
+      type: "Bachelor's Degree",
+      description: "Comprehensive training in software development, systems architecture, data analysis, and artificial intelligence."
+    },
+    {
+      title: "Diploma in Web Development",
+      institution: "Universidad Privada del Valle (UNIVALLE)",
+      type: "Postgraduate Diploma",
+      description: "Advanced specialization in modern web technologies, frontend software architecture, and backend web ecosystems."
+    }
+  ]
+};
+
 export const experiencesData = {
   es: [
     {

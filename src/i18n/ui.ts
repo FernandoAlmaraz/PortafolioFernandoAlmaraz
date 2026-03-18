@@ -9,6 +9,7 @@ export const ui = {
   es: {
     'nav.home': 'Inicio',
     'nav.experience': 'Experiencia',
+    'nav.education': 'Formación',
     'nav.projects': 'Proyectos',
     'nav.skills': 'Habilidades',
     'nav.contact': 'Contacto',
@@ -17,6 +18,7 @@ export const ui = {
     'hero.viewProjects': 'Ver Proyectos',
     'hero.contact': 'Contactar',
     'exp.title': 'Experiencia Profesional',
+    'edu.title': 'Formación Académica',
     'projects.title': 'Proyectos Destacados',
     'projects.view': 'Ver Proyecto →',
     'skills.title': 'Habilidades Técnicas',
@@ -28,6 +30,7 @@ export const ui = {
   en: {
     'nav.home': 'Home',
     'nav.experience': 'Experience',
+    'nav.education': 'Education',
     'nav.projects': 'Projects',
     'nav.skills': 'Skills',
     'nav.contact': 'Contact',
@@ -36,6 +39,7 @@ export const ui = {
     'hero.viewProjects': 'View Projects',
     'hero.contact': 'Contact Me',
     'exp.title': 'Professional Experience',
+    'edu.title': 'Academic Formation',
     'projects.title': 'Featured Projects',
     'projects.view': 'View Project →',
     'skills.title': 'Technical Expertise',
