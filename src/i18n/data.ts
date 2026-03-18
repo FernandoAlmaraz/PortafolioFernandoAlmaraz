@@ -64,7 +64,7 @@ export const experiencesData = {
       role: "Analytical Engineer",
       date: "Abr 2024 - Jul 2025",
       description: "Análisis de Datos, Desarrollo Web, Investigación, Data Warehouse.",
-      technologies: ["Python", "SQL", "SAP DataSphere", "SAC SAP Analytics Cloud", "Google Cloud Platform", "Looker Studio"],
+      technologies: ["Python", "SQL", "SAP DataSphere", "SAC SAP Analytics Cloud", "ABAP", "Google Cloud Platform", "Looker Studio"],
     },
     {
       company: "Bamboo Tec",
@@ -108,7 +108,7 @@ export const experiencesData = {
       role: "Analytical Engineer",
       date: "Apr 2024 - Jul 2025",
       description: "Data Analysis, Web Development, Research, Data Warehouse.",
-      technologies: ["Python", "SQL", "SAP DataSphere", "SAC SAP Analytics Cloud", "Google Cloud Platform", "Looker Studio"],
+      technologies: ["Python", "SQL", "SAP DataSphere", "SAC SAP Analytics Cloud", "ABAP", "Google Cloud Platform", "Looker Studio"],
     },
     {
       company: "Bamboo Tec",
@@ -129,6 +129,28 @@ export const projectsData = {
       tech: ["Astro", "TypeScript", "CSS", "JavaScript"],
       link: "https://fernandoalmaraz.github.io/PortafolioFernandoAlmaraz/",
       github: "https://github.com/FernandoAlmaraz/PortafolioFernandoAlmaraz"
+    },
+    {
+      title: "Maneja tus Gastos (Monorepo)",
+      description: "Proyecto educativo fullstack para la enseñanza de Docker, GitHub Actions y CI/CD. Arquitectura moderna con frontend en Angular 19 alojado en Firebase, y backend Node.js + PostgreSQL en Render.",
+      image: "maneja-tus-gastos.png",
+      tech: ["Angular 19", "Node.js", "PostgreSQL", "Docker", "CI/CD"],
+      link: "https://maneja-tus-gastos-5dc4b.web.app/",
+      github: "https://github.com/FernandoAlmaraz/maneja-tus-gastos-almaraz"
+    },
+    {
+      title: "Microservicio Clima IA & N8N",
+      description: "API REST desarrollada con FastAPI que integra OpenWeatherMap y Google Gemini para generar análisis climáticos inteligentes. Incluye propuestas de arquitectura RAG y flujos de automatización mediante N8N.",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
+      tech: ["FastAPI", "Python", "Gemini AI", "N8N", "Docker"],
+      github: "https://github.com/FernandoAlmaraz/Prueba-T-cnica-Coordinador-de-IA-y-Automatizaci-n---Fernando-Almaraz"
+    },
+    {
+      title: "OneCore Full Stack AI (Prueba Técnica)",
+      description: "API REST desarrollada con FastAPI para análisis de documentos usando Google Gemini AI, integración con AWS S3 para archivos CSV y autenticación JWT. Incluye suite con más de 100 pruebas unitarias.",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop",
+      tech: ["FastAPI", "Python", "Google Gemini", "AWS S3", "Docker"],
+      github: "https://github.com/FernandoAlmaraz/OneCore_Fullstack_AI_Test"
     }
   ],
   en: [
@@ -139,6 +161,28 @@ export const projectsData = {
       tech: ["Astro", "TypeScript", "CSS", "JavaScript"],
       link: "https://fernandoalmaraz.github.io/PortafolioFernandoAlmaraz/en/",
       github: "https://github.com/FernandoAlmaraz/PortafolioFernandoAlmaraz"
+    },
+    {
+      title: "Expense Manager (Monorepo)",
+      description: "Fullstack educational project focused on Docker, GitHub Actions, and CI/CD. Modern architecture featuring an Angular 19 frontend on Firebase and a Node.js + PostgreSQL backend on Render.",
+      image: "maneja-tus-gastos.png",
+      tech: ["Angular 19", "Node.js", "PostgreSQL", "Docker", "CI/CD"],
+      link: "https://maneja-tus-gastos-5dc4b.web.app/",
+      github: "https://github.com/FernandoAlmaraz/maneja-tus-gastos-almaraz"
+    },
+    {
+      title: "AI Weather API & N8N Automation",
+      description: "REST API built with FastAPI integrating OpenWeatherMap and Google Gemini for intelligent weather analysis. Features RAG architecture proposals and advanced automation workflows using N8N.",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
+      tech: ["FastAPI", "Python", "Gemini AI", "N8N", "Docker"],
+      github: "https://github.com/FernandoAlmaraz/Prueba-T-cnica-Coordinador-de-IA-y-Automatizaci-n---Fernando-Almaraz"
+    },
+    {
+      title: "OneCore Full Stack AI (Technical Test)",
+      description: "REST API built with FastAPI for document analysis using Google Gemini AI, AWS S3 integration for CSV files, and JWT authentication. Includes a comprehensive suite of over 100 unit tests.",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop",
+      tech: ["FastAPI", "Python", "Google Gemini", "AWS", "Docker"],
+      github: "https://github.com/FernandoAlmaraz/OneCore_Fullstack_AI_Test"
     }
   ]
 };
@@ -146,7 +190,7 @@ export const projectsData = {
 export const skillsData = {
   es: [
     { category: "Lenguajes", items: ["Python", "C#", "JavaScript", "TypeScript", "PHP", "SQL"] },
-    { category: "Frameworks & Libs", items: ["Angular", "Laravel", "Flask", "Astro", "Pandas", "NumPy"] },
+    { category: "Frameworks & Libs", items: ["Angular", "Laravel", "Flask", "Fast API", "Astro", "Pandas", "NumPy"] },
     { category: "Nube & Herramientas", items: ["Docker", "Git", "Linux", "Google Cloud Platform", "SAP DataSphere"] },
     { category: "IA & Datos", items: ["LangChain", "LangGraph", "Scikit-learn", "Power BI", "N8N"] }
   ],
