@@ -36,6 +36,7 @@ export const experiencesData = {
       role: "Software Engineer (Chatbots & Fullstack)",
       date: "Oct 2025 - Mar 2026",
       description: "Chatbot con IA & Desarrollo FullStack",
+      recommendation: "Letter of Recommendation - Fernando Almaraz.pdf",
       technologies: ["LangChain", "LangGraph", "Python", "FastAPI", "Docker", "Astro", "JavaScript", "PHP", "Laravel"],
     },
     {
@@ -43,6 +44,7 @@ export const experiencesData = {
       role: "Software Engineer (Chatbots & Fullstack)",
       date: "Jun 2025 - Dic 2025",
       description: "Chatbot con IA & Desarrollo FullStack",
+      recommendation: "SBG Recommendation Letter.pdf",
       technologies: ["LangChain", "LangGraph", "Python", "FastAPI", "Docker", "Astro", "JavaScript", "PHP", "Laravel"],
     },
     {
@@ -80,6 +82,7 @@ export const experiencesData = {
       role: "Software Engineer (Chatbots & Fullstack)",
       date: "Oct 2025 - Mar 2026",
       description: "AI Chatbot & FullStack Development",
+      recommendation: "rLetter of Recommendation - Fernando Almaraz.pdf",
       technologies: ["LangChain", "LangGraph", "Python", "FastAPI", "Docker", "Astro", "JavaScript", "PHP", "Laravel"],
     },
     {
@@ -87,6 +90,7 @@ export const experiencesData = {
       role: "Software Engineer (Chatbots & Fullstack)",
       date: "Jun 2025 - Dec 2025",
       description: "AI Chatbot & FullStack Development",
+      recommendation: "SBG Recommendation Letter.pdf",
       technologies: ["LangChain", "LangGraph", "Python", "FastAPI", "Docker", "Astro", "JavaScript", "PHP", "Laravel"],
     },
     {
