@@ -1,19 +1,40 @@
 ---
-import ThemeToggle from './ThemeToggle.astro';
-import { useTranslations } from '../i18n/utils';
-import { ui } from '../i18n/ui';
+import ThemeToggle from "./ThemeToggle.astro";
+import { useTranslations } from "../i18n/utils";
+import { ui } from "../i18n/ui";
 
-const lang = (Astro.currentLocale || 'es') as keyof typeof ui;
+const lang = (Astro.currentLocale || "es") as keyof typeof ui;
 const t = useTranslations(lang);
 const rawBase = import.meta.env.BASE_URL;
-const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+const base = rawBase.endsWith("/") ? rawBase : rawBase + "/";
 ---
+
 <nav class="glass sticky-nav">
   <div class="container nav-content">
-    <a href={`${base}${lang === 'en' ? 'en/' : ''}`} class="logo text-gradient">FA</a>
-    
+    <a
+      href={`${base}${lang === "en" ? "en/" : ""}`}
+      class="logo-link"
+      aria-label="Inicio"
+    >
+      <img
+        src={`${base}nav-perfil.jpeg`}
+        alt="Fernando Almaraz"
+        class="logo-img"
+      />
+    </a>
+
     <button class="mobile-menu-btn" aria-label="Menu" id="mobile-menu-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
         <line x1="3" y1="12" x2="21" y2="12"></line>
         <line x1="3" y1="6" x2="21" y2="6"></line>
         <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -21,17 +42,22 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
     </button>
 
     <div class="nav-links" id="nav-links">
-      <a href="#hero">{t('nav.home')}</a>
-      <a href="#experience">{t('nav.experience')}</a>
-      <a href="#education">{t('nav.education')}</a>
-      <a href="#projects">{t('nav.projects')}</a>
-      <a href="#skills">{t('nav.skills')}</a>
-      <a href="#contact" class="btn-primary">{t('nav.contact')}</a>
+      <a href="#hero">{t("nav.home")}</a>
+      <a href="#experience">{t("exp.title")}</a>
+      <a href="#education">{t("edu.title")}</a>
+      <a href="#projects">{t("nav.projects")}</a>
+      <a href="#skills">{t("nav.skills")}</a>
+      <a
+        href={`https://wa.me/59177999469?text=${encodeURIComponent(t("hero.whatsappText"))}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary">{t("nav.contact")}</a
+      >
       <ThemeToggle />
       <div class="lang-picker">
-        <a href={base} class={lang === 'es' ? 'active' : ''}>ES</a>
+        <a href={base} class={lang === "es" ? "active" : ""}>ES</a>
         <span>|</span>
-        <a href={`${base}en/`} class={lang === 'en' ? 'active' : ''}>EN</a>
+        <a href={`${base}en/`} class={lang === "en" ? "active" : ""}>EN</a>
       </div>
     </div>
   </div>
@@ -51,9 +77,20 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
     justify-content: space-between;
     align-items: center;
   }
-  .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .logo-img {
+    height: 58px;
+    width: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .logo-img:hover {
+    transform: scale(1.05);
   }
   .nav-links {
     display: flex;
@@ -116,7 +153,10 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
       transform: translateY(-150%);
       opacity: 0;
       visibility: hidden;
-      transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease,
+        visibility 0.3s;
       z-index: -1;
     }
     .nav-links.show {
@@ -133,22 +173,22 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 
 <script>
   const initMobileMenu = () => {
-    const btn = document.getElementById('mobile-menu-btn');
-    const links = document.getElementById('nav-links');
-    
+    const btn = document.getElementById("mobile-menu-btn");
+    const links = document.getElementById("nav-links");
+
     if (btn && links) {
       // Remove any existing listener to prevent duplicate firings if script runs multiple times
       const newBtn = btn.cloneNode(true);
       btn.parentNode?.replaceChild(newBtn, btn);
 
-      newBtn.addEventListener('click', () => {
-        links.classList.toggle('show');
+      newBtn.addEventListener("click", () => {
+        links.classList.toggle("show");
       });
 
-      const anchorLinks = links.querySelectorAll('a');
-      anchorLinks.forEach(a => {
-        a.addEventListener('click', () => {
-          links.classList.remove('show');
+      const anchorLinks = links.querySelectorAll("a");
+      anchorLinks.forEach((a) => {
+        a.addEventListener("click", () => {
+          links.classList.remove("show");
         });
       });
     }
@@ -156,6 +196,5 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 
   // Run on first load and astro view transitions
   initMobileMenu();
-  document.addEventListener('astro:page-load', initMobileMenu);
+  document.addEventListener("astro:page-load", initMobileMenu);
 </script>
-
