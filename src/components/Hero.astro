@@ -4,6 +4,9 @@ import { ui } from '../i18n/ui';
 
 const lang = (Astro.currentLocale || 'es') as keyof typeof ui;
 const t = useTranslations(lang);
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+const cvFilename = `${lang.toUpperCase()}_FernandoAlmarazDeLaQuintana_CV.pdf`;
 ---
 
 <section id="hero" class="container hero-section">
@@ -17,7 +20,14 @@ const t = useTranslations(lang);
     </p>
     <div class="hero-actions">
       <a href="#projects" class="btn-primary">{t('hero.viewProjects')}</a>
-      <a href="#contact" class="btn-secondary">{t('hero.contact')}</a>
+      <a href={`${base}${cvFilename}`} download target="_blank" class="btn-secondary cv-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        {t('hero.downloadCV')}
+      </a>
     </div>
   </div>
   <div class="hero-image-wrapper">
@@ -65,6 +75,7 @@ const t = useTranslations(lang);
   .hero-actions {
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
   }
   .hero-image-wrapper {
     position: relative;
@@ -125,15 +136,30 @@ const t = useTranslations(lang);
     transform: translateY(-2px);
   }
   .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     border: 1px solid var(--border);
     color: var(--foreground);
     padding: 1rem 2.5rem;
     border-radius: 9999px;
     font-weight: 600;
-    transition: background 0.3s ease;
+    text-decoration: none;
+    transition: all 0.3s ease;
   }
   .btn-secondary:hover {
     background: var(--secondary);
+    transform: translateY(-2px);
+  }
+  .cv-btn {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(59, 130, 246, 0.05);
+  }
+  .cv-btn:hover {
+    background: var(--primary);
+    color: white;
   }
 
   @media (max-width: 992px) {
