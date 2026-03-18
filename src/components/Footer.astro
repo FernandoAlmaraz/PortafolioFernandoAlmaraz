@@ -1,26 +1,39 @@
 ---
+import { useTranslations } from '../i18n/utils';
+import { ui } from '../i18n/ui';
+
+const lang = (Astro.currentLocale || 'es') as keyof typeof ui;
+const t = useTranslations(lang);
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 ---
+
 <footer class="footer">
   <div class="container footer-grid">
     <div class="footer-info">
-      <a href="/" class="logo text-gradient">FA</a>
-      <p>Construyendo sistemas escalables y experiencias web modernas.</p>
+      <a href={`${base}${lang === 'en' ? 'en/' : ''}`} class="logo text-gradient">FA</a>
+      <p>{t('footer.desc')}</p>
     </div>
     <div class="footer-links">
-      <h4>Enlaces</h4>
-      <a href="#hero">Inicio</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#skills">Habilidades</a>
+      <h4>{t('footer.links')}</h4>
+      <a href="#hero">{t('nav.home')}</a>
+      <a href="#projects">{t('nav.projects')}</a>
+      <a href="#skills">{t('nav.skills')}</a>
     </div>
     <div class="footer-social">
-      <h4>Conectar</h4>
+      <h4>{t('footer.connect')}</h4>
       <a href="https://github.com/FernandoAlmaraz" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/fernando-gabriel-almaraz-de-la-quintana-4269a4245" target="_blank">LinkedIn</a>
+      <a
+        href="https://www.linkedin.com/in/fernando-almaraz-dela-quintana/"
+        target="_blank">LinkedIn</a
+      >
       <a href="mailto:fernandoalmarazdelaquintana@gmail.com">Email</a>
     </div>
   </div>
   <div class="container copyright">
-    <p>&copy; {new Date().getFullYear()} Fernando Almaraz. Todos los derechos reservados.</p>
+    <p>
+      &copy; {new Date().getFullYear()} Fernando Almaraz. {t('footer.rights')}
+    </p>
   </div>
 </footer>
 
@@ -50,17 +63,20 @@
     margin-bottom: 1.5rem;
     font-size: 1rem;
   }
-  .footer-links, .footer-social {
+  .footer-links,
+  .footer-social {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
   }
-  .footer-links a, .footer-social a {
+  .footer-links a,
+  .footer-social a {
     color: var(--muted);
     font-size: 0.9rem;
     transition: color 0.3s ease;
   }
-  .footer-links a:hover, .footer-social a:hover {
+  .footer-links a:hover,
+  .footer-social a:hover {
     color: var(--foreground);
   }
   .copyright {

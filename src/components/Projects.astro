@@ -1,28 +1,15 @@
 ---
-const projects = [
-  {
-    title: "Sistema de Riesgos Cardiacos",
-    description: "Sistema web basado en aprendizaje automático para apoyo a la determinación de riesgos cardiacos. (Proyecto de Titulación)",
-    tech: ["Angular 15", "Flask", "Python", "MySQL", "Scikit-learn"],
-    link: "https://github.com/FernandoAlmaraz"
-  },
-  {
-    title: "Chatbots & Fullstack Dev",
-    description: "Desarrollo de chatbots con IA y soluciones fullstack para EasyContact y Reborn.",
-    tech: ["LangChain", "LangGraph", "Docker", "Angular", "Laravel"],
-    link: "https://github.com/FernandoAlmaraz"
-  },
-  {
-    title: "Data Analysis & ETL",
-    description: "Análisis de datos, desarrollo de procesos ETL e investigación de herramientas de datos en DATEC y Bamboo Tec.",
-    tech: ["Python", "Pandas", "Power BI", "SAP DataSphere"],
-    link: "https://github.com/FernandoAlmaraz"
-  }
-];
+import { useTranslations } from '../i18n/utils';
+import { ui } from '../i18n/ui';
+import { projectsData } from '../i18n/data';
+
+const lang = (Astro.currentLocale || 'es') as keyof typeof ui;
+const t = useTranslations(lang);
+const projects = projectsData[lang];
 ---
 
 <section id="projects" class="container projects-section">
-  <h2 class="section-title">Featured Projects</h2>
+  <h2 class="section-title">{t('projects.title')}</h2>
   <div class="projects-grid">
     {projects.map(project => (
       <div class="project-card glass">
@@ -33,7 +20,7 @@ const projects = [
           <div class="project-tech">
             {project.tech.map(t => <span>{t}</span>)}
           </div>
-          <a href={project.link} class="project-link">View Project →</a>
+          <a href={project.link} class="project-link">{t('projects.view')}</a>
         </div>
       </div>
     ))}

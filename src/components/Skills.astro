@@ -1,14 +1,15 @@
 ---
-const skills = [
-  { category: "Lenguajes", items: ["Python", "C#", "JavaScript", "TypeScript", "PHP", "SQL"] },
-  { category: "Frameworks & Libs", items: ["Angular", "Laravel", "Flask", "Astro", "Pandas", "NumPy"] },
-  { category: "Cloud & DevTools", items: ["Docker", "Git", "Linux", "Google Cloud Platform", "SAP DataSphere"] },
-  { category: "AI & Data", items: ["LangChain", "LangGraph", "Scikit-learn", "Power BI", "N8N"] }
-];
+import { useTranslations } from '../i18n/utils';
+import { ui } from '../i18n/ui';
+import { skillsData } from '../i18n/data';
+
+const lang = (Astro.currentLocale || 'es') as keyof typeof ui;
+const t = useTranslations(lang);
+const skills = skillsData[lang];
 ---
 
 <section id="skills" class="container skills-section">
-  <h2 class="section-title">Technical Expertise</h2>
+  <h2 class="section-title">{t('skills.title')}</h2>
   <div class="skills-grid">
     {skills.map(skill => (
       <div class="skill-card glass">

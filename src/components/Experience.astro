@@ -1,96 +1,15 @@
 ---
-const experiences = [
-  {
-    company: "Reborn Developments",
-    role: "Software Engineer (Chatbots & Fullstack)",
-    date: "Dec 2025 - May 2026",
-    description: "Chatbot with IA & FullStack Development",
-    technologies: [
-      "LangChain",
-      "LangGraph",
-      "Python",
-      "FastAPI",
-      "Docker",
-      "Astro",
-      "JavaScript",
-      "PHP",
-      "Laravel",
-    ],
-  },
-  {
-    company: "Profunded",
-    role: "Software Engineer (Chatbots & Fullstack)",
-    date: "Jun 2025 - Dec 2025",
-    description: "Chatbot with IA & FullStack Development",
-    technologies: [
-      "LangChain",
-      "LangGraph",
-      "Python",
-      "FastAPI",
-      "Docker",
-      "Astro",
-      "JavaScript",
-      "PHP",
-      "Laravel",
-    ],
-  },
-  {
-    company: "Fusion Pax",
-    role: "Ingeniero en IA & Automatización",
-    date: "Jun 2025 - Sep 2025",
-    description: "Automatización y desarrollo con IA.",
-    technologies: ["Python", "N8N", "LangChain", "Docker"],
-  },
-  {
-    company: "EasyContact",
-    role: "Software Engineer (Chatbots & Fullstack)",
-    date: "Jan 2024 - Mar 2025",
-    description: "Chatbot with IA & FullStack Development / HALF DAY",
-    technologies: [
-      "Python",
-      "LangChain",
-      "LangGraph",
-      "Google Cloud Platform",
-      "Docker",
-      "Angular",
-      "PHP",
-      "Laravel",
-    ],
-  },
-  {
-    company: "DATEC",
-    role: "Analytical Engineer",
-    date: "Apr 2024 - Jul 2025",
-    description: "Data Analysis, Web Development, Research, Data Warehouse.",
-    technologies: [
-      "Python",
-      "SQL",
-      "SAP DataSphere",
-      "SAC SAP Analytics Cloud",
-      "Google Cloud Platform",
-      "Looker Studio",
-    ],
-  },
-  {
-    company: "Bamboo Tec",
-    role: "Pasantía: Fullstack Web Development - BI & Analytics",
-    date: "Jul 2022 - Dec 2022",
-    description:
-      "Analysis of data, development of ETL processes, research and web development.",
-    technologies: [
-      "Python",
-      "JavaScript",
-      "Pandas",
-      "NumPy",
-      "Power BI",
-      "ODOO",
-    ],
-  },
-];
+import { useTranslations } from '../i18n/utils';
+import { ui } from '../i18n/ui';
+import { experiencesData } from '../i18n/data';
+
+const lang = (Astro.currentLocale || 'es') as keyof typeof ui;
+const t = useTranslations(lang);
+const experiences = experiencesData[lang];
 ---
 
 <section id="experience" class="container experience-section">
-  <h2 class="section-title">Experiencia Profesional</h2>
+  <h2 class="section-title">{t('exp.title')}</h2>
   <div class="timeline">
     {
       experiences.map((exp, index) => (

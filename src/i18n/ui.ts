@@ -1,0 +1,47 @@
+export const languages = {
+  es: 'ES',
+  en: 'EN',
+};
+
+export const defaultLang = 'es';
+
+export const ui = {
+  es: {
+    'nav.home': 'Inicio',
+    'nav.experience': 'Experiencia',
+    'nav.projects': 'Proyectos',
+    'nav.skills': 'Habilidades',
+    'nav.contact': 'Contacto',
+    'hero.badge': 'Ingeniero de Sistemas Informáticos',
+    'hero.desc': 'Especializado en Inteligencia Artificial, Desarrollo Web Full Stack y Análisis de Datos. Transformo problemas complejos en soluciones técnicas eficientes, innovadoras y robustas.',
+    'hero.viewProjects': 'Ver Proyectos',
+    'hero.contact': 'Contactar',
+    'exp.title': 'Experiencia Profesional',
+    'projects.title': 'Proyectos Destacados',
+    'projects.view': 'Ver Proyecto →',
+    'skills.title': 'Habilidades Técnicas',
+    'footer.desc': 'Construyendo sistemas escalables y experiencias web modernas.',
+    'footer.links': 'Enlaces',
+    'footer.connect': 'Conectar',
+    'footer.rights': 'Todos los derechos reservados.',
+  },
+  en: {
+    'nav.home': 'Home',
+    'nav.experience': 'Experience',
+    'nav.projects': 'Projects',
+    'nav.skills': 'Skills',
+    'nav.contact': 'Contact',
+    'hero.badge': 'Computer Systems Engineer',
+    'hero.desc': 'Specialized in Artificial Intelligence, Full Stack Web Development, and Data Analysis. I transform complex problems into efficient, innovative, and robust technical solutions.',
+    'hero.viewProjects': 'View Projects',
+    'hero.contact': 'Contact Me',
+    'exp.title': 'Professional Experience',
+    'projects.title': 'Featured Projects',
+    'projects.view': 'View Project →',
+    'skills.title': 'Technical Expertise',
+    'footer.desc': 'Building scalable systems and modern web experiences.',
+    'footer.links': 'Links',
+    'footer.connect': 'Connect',
+    'footer.rights': 'All rights reserved.',
+  },
+} as const;
