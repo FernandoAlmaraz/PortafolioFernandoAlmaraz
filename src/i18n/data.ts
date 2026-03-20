@@ -155,6 +155,14 @@ export const projectsData = {
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop",
       tech: ["FastAPI", "Python", "Google Gemini", "AWS S3", "Docker"],
       github: "https://github.com/FernandoAlmaraz/OneCore_Fullstack_AI_Test"
+    },
+    {
+      title: "ShopLite 🛒",
+      description: "Demostración de e-commerce moderna con Angular 19. Interfaz 'Liquid Glass', animaciones avanzadas 'Fly-to-Cart' y gestión de estado eficiente con Signals.",
+      image: "shoplite.png",
+      tech: ["Angular 19", "Signals", "Animations", "Glassmorphism"],
+      link: "https://fernandoalmaraz.github.io/shoplite/home",
+      github: "https://github.com/FernandoAlmaraz/shoplite"
     }
   ],
   en: [
@@ -187,6 +195,14 @@ export const projectsData = {
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop",
       tech: ["FastAPI", "Python", "Google Gemini", "AWS", "Docker"],
       github: "https://github.com/FernandoAlmaraz/OneCore_Fullstack_AI_Test"
+    },
+    {
+      title: "ShopLite 🛒",
+      description: "Modern e-commerce demonstration built with Angular 19. Features 'Liquid Glass' UI, advanced 'Fly-to-Cart' animations, and efficient state management using Signals.",
+      image: "shoplite.png",
+      tech: ["Angular 19", "Signals", "Animations", "Glassmorphism"],
+      link: "https://fernandoalmaraz.github.io/shoplite/home",
+      github: "https://github.com/FernandoAlmaraz/shoplite"
     }
   ]
 };
