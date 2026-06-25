@@ -32,6 +32,13 @@ export const educationData = {
 export const experiencesData = {
   es: [
     {
+      company: "CO4 SRL",
+      role: "Senior Software Engineer",
+      date: "May 2026 - Presente",
+      description: "Desarrollo de software y análisis de sistemas utilizando Python, Odoo, Jeeves y Kanban.",
+      technologies: ["Python", "Odoo", "Jeeves", "Kanban", "Java"],
+    },
+    {
       company: "Reborn Developments",
       role: "Software Engineer (Chatbots & Fullstack)",
       date: "Oct 2025 - Mar 2026",
@@ -77,6 +84,13 @@ export const experiencesData = {
     },
   ],
   en: [
+    {
+      company: "CO4 SRL",
+      role: "Senior Software Engineer",
+      date: "May 2026 - Present",
+      description: "Software development, systems analysis, and cross-functional support for international teams using Python, Odoo, Jeeves, Java, and Kanban.",
+      technologies: ["Python", "Odoo", "Jeeves", "Kanban", "Java"],
+    },
     {
       company: "Reborn Developments",
       role: "Software Engineer (Chatbots & Fullstack)",
