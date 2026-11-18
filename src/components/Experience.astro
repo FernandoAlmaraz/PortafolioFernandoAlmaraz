@@ -21,6 +21,11 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
             <h3 class="title">{exp.role}</h3>
             <div class="company">{exp.company}</div>
             <p class="description">{exp.description}</p>
+            {exp.highlights?.length > 0 && (
+              <ul class="highlights">
+                {exp.highlights.map((h: string) => <li>{h}</li>)}
+              </ul>
+            )}
             <div class="tags">
               {exp.technologies.map((tech: string) => (
                 <span class="tag">{tech}</span>
@@ -120,6 +125,21 @@ const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
   .description {
     margin-bottom: 1rem;
     font-size: 0.95rem;
+  }
+  .highlights {
+    margin: 0 0 1rem;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .highlights li {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .highlights li::marker {
+    color: var(--primary);
   }
   .tags {
     display: flex;

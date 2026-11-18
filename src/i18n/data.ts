@@ -1,30 +1,30 @@
 export const educationData = {
   es: [
     {
-      title: "Ingeniería de Sistemas Informáticos",
+      title: "Diplomado en Desarrollo Web Full Stack",
       institution: "Universidad Privada del Valle (UNIVALLE)",
-      type: "Grado Universitario",
-      description: "Formación integral en desarrollo de software, arquitectura de sistemas, análisis de datos e inteligencia artificial."
+      type: "Postgrado / Diplomado · Concluido · 2026",
+      description: "Especialización avanzada en tecnologías web modernas, arquitectura de software frontend y ecosistemas web backend."
     },
     {
-      title: "Diplomado en Desarrollo Web",
+      title: "Ingeniería de Sistemas Informáticos",
       institution: "Universidad Privada del Valle (UNIVALLE)",
-      type: "Postgrado / Diplomado",
-      description: "Especialización avanzada en tecnologías web modernas, arquitectura de software frontend y ecosistemas web backend."
+      type: "Licenciatura · Titulado",
+      description: "Formación integral en ingeniería y desarrollo de software, arquitectura de sistemas, análisis de datos e inteligencia artificial."
     }
   ],
   en: [
     {
-      title: "Computer Systems Engineering",
+      title: "Postgraduate Diploma in Full Stack Web Development",
       institution: "Universidad Privada del Valle (UNIVALLE)",
-      type: "Bachelor's Degree",
-      description: "Comprehensive training in software development, systems architecture, data analysis, and artificial intelligence."
+      type: "Postgraduate Diploma · Completed · 2026",
+      description: "Advanced specialization in modern web technologies, frontend software architecture, and backend web ecosystems."
     },
     {
-      title: "Diploma in Web Development",
+      title: "B.S. in Computer Systems Engineering",
       institution: "Universidad Privada del Valle (UNIVALLE)",
-      type: "Postgraduate Diploma",
-      description: "Advanced specialization in modern web technologies, frontend software architecture, and backend web ecosystems."
+      type: "Bachelor's Degree · Graduated",
+      description: "Comprehensive training in software engineering and development, systems architecture, data analysis, and artificial intelligence."
     }
   ]
 };
@@ -33,24 +33,36 @@ export const experiencesData = {
   es: [
     {
       company: "CO4 SRL",
-      role: "Senior Software Engineer",
+      role: "Software Engineer",
       date: "May 2026 - Presente",
-      description: "Desarrollo de software y análisis de sistemas utilizando Python, Odoo, Jeeves y Kanban.",
-      technologies: ["Python", "Odoo", "Jeeves", "Kanban", "Java"],
+      description: "Desarrollo de software empresarial, arquitectura de soluciones y análisis avanzado de sistemas.",
+      highlights: [
+        "Integración, personalización y optimización de flujos de negocio en sistemas ERP (Odoo y Jeeves) usando Python y Java.",
+        "Gestión continua de entregables técnicos y flujos de trabajo bajo la metodología Kanban.",
+      ],
+      technologies: ["Python", "Odoo", "Jeeves", "Java", "Kanban"],
     },
     {
       company: "Reborn Developments",
-      role: "Software Engineer (Chatbots & Fullstack)",
+      role: "Software Engineer (Chatbots & Full Stack)",
       date: "Oct 2025 - Mar 2026",
-      description: "Chatbot con IA & Desarrollo FullStack",
+      description: "Diseño, desarrollo y despliegue de agentes conversacionales y chatbots avanzados con IA usando LangChain y LangGraph.",
+      highlights: [
+        "Construcción de APIs RESTful de alto rendimiento con Python (FastAPI) y servicios backend robustos con PHP (Laravel).",
+        "Desarrollo de interfaces web rápidas y modernas con Astro y JavaScript, contenerizando aplicaciones con Docker.",
+      ],
       recommendation: "Letter of Recommendation - Fernando Almaraz.pdf",
       technologies: ["LangChain", "LangGraph", "Python", "FastAPI", "Docker", "Astro", "JavaScript", "PHP", "Laravel"],
     },
     {
       company: "Profunded",
-      role: "Software Engineer (Chatbots & Fullstack)",
+      role: "Software Engineer (Chatbots & Full Stack)",
       date: "Jun 2025 - Dic 2025",
-      description: "Chatbot con IA & Desarrollo FullStack",
+      description: "Implementación de soluciones Full Stack integradas con flujos de IA generativa y chatbots automatizados.",
+      highlights: [
+        "Desarrollo y mantenimiento de microservicios backend e integraciones con FastAPI y Laravel en entornos Docker.",
+        "Optimización del rendimiento frontend con Astro y JavaScript.",
+      ],
       recommendation: "SBG Recommendation Letter.pdf",
       technologies: ["LangChain", "LangGraph", "Python", "FastAPI", "Docker", "Astro", "JavaScript", "PHP", "Laravel"],
     },
@@ -58,52 +70,78 @@ export const experiencesData = {
       company: "Fusion Pax",
       role: "Ingeniero en IA & Automatización",
       date: "Jun 2025 - Sep 2025",
-      description: "Automatización y desarrollo con IA.",
-      technologies: ["Python", "N8N", "LangChain", "Docker"],
-    },
-    {
-      company: "EasyContact",
-      role: "Software Engineer (Chatbots & Fullstack)",
-      date: "Ene 2024 - Mar 2025",
-      description: "Chatbot con IA & Desarrollo FullStack / MEDIO TIEMPO",
-      technologies: ["Python", "LangChain", "LangGraph", "Google Cloud Platform", "Docker", "Angular", "PHP", "Laravel"],
+      description: "Diseño e implementación de flujos automatizados y orquestación de agentes de IA para optimizar procesos operativos.",
+      highlights: [
+        "Integración de Modelos de Lenguaje (LLMs) con LangChain y Python, conectados a pipelines de automatización en n8n desplegados en Docker.",
+      ],
+      technologies: ["Python", "n8n", "LangChain", "Docker"],
     },
     {
       company: "DATEC",
       role: "Analytical Engineer",
       date: "Abr 2024 - Jul 2025",
-      description: "Análisis de Datos, Desarrollo Web, Investigación, Data Warehouse.",
-      technologies: ["Python", "SQL", "SAP DataSphere", "SAC SAP Analytics Cloud", "ABAP", "Google Cloud Platform", "Looker Studio"],
+      description: "Ingeniería y análisis de datos corporativos, diseño de arquitectura Data Warehouse e investigación técnica aplicada.",
+      highlights: [
+        "Desarrollo e integración de modelos analíticos y reportes ejecutivos con SAP DataSphere, SAP Analytics Cloud (SAC), ABAP y Looker Studio.",
+        "Procesamiento avanzado de datos con Python, consultas SQL complejas y despliegue de servicios en Google Cloud Platform (GCP).",
+      ],
+      technologies: ["Python", "SQL", "SAP DataSphere", "SAP Analytics Cloud", "ABAP", "Google Cloud Platform", "Looker Studio"],
+    },
+    {
+      company: "EasyContact",
+      role: "Software Engineer (Chatbots & Full Stack) — Medio Tiempo",
+      date: "Ene 2024 - Mar 2025",
+      description: "Desarrollo Full Stack remoto a medio tiempo y creación de chatbots inteligentes con Python, LangChain y LangGraph.",
+      highlights: [
+        "Construcción de plataformas web escalables con Angular en el frontend y PHP (Laravel) en el backend.",
+        "Gestión de infraestructura y despliegue de contenedores Docker en Google Cloud Platform (GCP).",
+      ],
+      technologies: ["Python", "LangChain", "LangGraph", "Google Cloud Platform", "Docker", "Angular", "PHP", "Laravel"],
     },
     {
       company: "Bamboo Tec",
-      role: "Pasantía: Fullstack Web Development - BI & Analytics",
+      role: "Pasantía: Full Stack Web Development - BI & Analytics",
       date: "Jul 2022 - Dic 2022",
-      description: "Análisis de datos, desarrollo de procesos ETL, investigación y desarrollo web.",
-      technologies: ["Python", "JavaScript", "Pandas", "NumPy", "Power BI", "ODOO"],
+      description: "Desarrollo y automatización de procesos ETL para extracción, transformación y carga de datos con Python, Pandas y NumPy.",
+      highlights: [
+        "Creación de dashboards interactivos de inteligencia de negocios en Power BI y desarrollo de módulos web/ERP con JavaScript y Odoo.",
+      ],
+      technologies: ["Python", "JavaScript", "Pandas", "NumPy", "Power BI", "Odoo"],
     },
   ],
   en: [
     {
       company: "CO4 SRL",
-      role: "Senior Software Engineer",
+      role: "Software Engineer",
       date: "May 2026 - Present",
-      description: "Software development, systems analysis, and cross-functional support for international teams using Python, Odoo, Jeeves, Java, and Kanban.",
-      technologies: ["Python", "Odoo", "Jeeves", "Kanban", "Java"],
+      description: "Enterprise software development, solution architecture, and advanced systems analysis.",
+      highlights: [
+        "Integration, customization, and optimization of business workflows in ERP systems (Odoo and Jeeves) using Python and Java.",
+        "Continuous management of technical deliverables and workflows under the Kanban methodology.",
+      ],
+      technologies: ["Python", "Odoo", "Jeeves", "Java", "Kanban"],
     },
     {
       company: "Reborn Developments",
-      role: "Software Engineer (Chatbots & Fullstack)",
+      role: "Software Engineer (Chatbots & Full Stack)",
       date: "Oct 2025 - Mar 2026",
-      description: "AI Chatbot & FullStack Development",
-      recommendation: "rLetter of Recommendation - Fernando Almaraz.pdf",
+      description: "Design, development, and deployment of conversational agents and advanced AI-powered chatbots using LangChain and LangGraph.",
+      highlights: [
+        "Construction of high-performance RESTful APIs with Python (FastAPI) and robust backend services with PHP (Laravel).",
+        "Development of fast, modern web interfaces with Astro and JavaScript, containerizing applications using Docker.",
+      ],
+      recommendation: "Letter of Recommendation - Fernando Almaraz.pdf",
       technologies: ["LangChain", "LangGraph", "Python", "FastAPI", "Docker", "Astro", "JavaScript", "PHP", "Laravel"],
     },
     {
       company: "Profunded",
-      role: "Software Engineer (Chatbots & Fullstack)",
+      role: "Software Engineer (Chatbots & Full Stack)",
       date: "Jun 2025 - Dec 2025",
-      description: "AI Chatbot & FullStack Development",
+      description: "Implementation of Full Stack solutions integrated with generative AI workflows and automated chatbots.",
+      highlights: [
+        "Development and maintenance of backend microservices and integrations using FastAPI and Laravel in Docker environments.",
+        "Frontend performance optimization using Astro and JavaScript.",
+      ],
       recommendation: "SBG Recommendation Letter.pdf",
       technologies: ["LangChain", "LangGraph", "Python", "FastAPI", "Docker", "Astro", "JavaScript", "PHP", "Laravel"],
     },
@@ -111,29 +149,43 @@ export const experiencesData = {
       company: "Fusion Pax",
       role: "AI & Automation Engineer",
       date: "Jun 2025 - Sep 2025",
-      description: "Automation and AI development.",
-      technologies: ["Python", "N8N", "LangChain", "Docker"],
-    },
-    {
-      company: "EasyContact",
-      role: "Software Engineer (Chatbots & Fullstack)",
-      date: "Jan 2024 - Mar 2025",
-      description: "AI Chatbot & FullStack Development / HALF DAY",
-      technologies: ["Python", "LangChain", "LangGraph", "Google Cloud Platform", "Docker", "Angular", "PHP", "Laravel"],
+      description: "Design and implementation of automated workflows and AI agent orchestration to optimize operational processes.",
+      highlights: [
+        "Integration of Large Language Models (LLMs) using LangChain and Python, connected to n8n automation pipelines deployed on Docker.",
+      ],
+      technologies: ["Python", "n8n", "LangChain", "Docker"],
     },
     {
       company: "DATEC",
       role: "Analytical Engineer",
       date: "Apr 2024 - Jul 2025",
-      description: "Data Analysis, Web Development, Research, Data Warehouse.",
-      technologies: ["Python", "SQL", "SAP DataSphere", "SAC SAP Analytics Cloud", "ABAP", "Google Cloud Platform", "Looker Studio"],
+      description: "Corporate data engineering and analysis, Data Warehouse architecture design, and applied technical research.",
+      highlights: [
+        "Development and integration of analytical models and executive reports using SAP DataSphere, SAP Analytics Cloud (SAC), ABAP, and Looker Studio.",
+        "Advanced data processing with Python, complex SQL queries, and service deployment on Google Cloud Platform (GCP).",
+      ],
+      technologies: ["Python", "SQL", "SAP DataSphere", "SAP Analytics Cloud", "ABAP", "Google Cloud Platform", "Looker Studio"],
+    },
+    {
+      company: "EasyContact",
+      role: "Software Engineer (Chatbots & Full Stack) — Part-Time",
+      date: "Jan 2024 - Mar 2025",
+      description: "Remote part-time Full Stack development and creation of intelligent chatbots using Python, LangChain, and LangGraph.",
+      highlights: [
+        "Construction of scalable web platforms using Angular on the frontend and PHP (Laravel) on the backend.",
+        "Infrastructure management and Docker container deployment on Google Cloud Platform (GCP).",
+      ],
+      technologies: ["Python", "LangChain", "LangGraph", "Google Cloud Platform", "Docker", "Angular", "PHP", "Laravel"],
     },
     {
       company: "Bamboo Tec",
-      role: "Internship: Fullstack Web Development - BI & Analytics",
+      role: "Internship: Full Stack Web Development - BI & Analytics",
       date: "Jul 2022 - Dec 2022",
-      description: "Data analysis, ETL process development, research and web development.",
-      technologies: ["Python", "JavaScript", "Pandas", "NumPy", "Power BI", "ODOO"],
+      description: "Development and automation of ETL processes for data extraction, transformation, and loading using Python, Pandas, and NumPy.",
+      highlights: [
+        "Creation of interactive business intelligence dashboards in Power BI and web/ERP module development with JavaScript and Odoo.",
+      ],
+      technologies: ["Python", "JavaScript", "Pandas", "NumPy", "Power BI", "Odoo"],
     },
   ]
 };
@@ -152,7 +204,7 @@ export const projectsData = {
       title: "Maneja tus Gastos (Monorepo)",
       description: "Proyecto educativo fullstack para la enseñanza de Docker, GitHub Actions y CI/CD. Arquitectura moderna con frontend en Angular 19 alojado en Firebase, y backend Node.js + PostgreSQL en Render.",
       image: "maneja-tus-gastos.png",
-      tech: ["Angular 19", "Node.js", "PostgreSQL", "Docker", "CI/CD"],
+      tech: ["Angular 19", "Node.js", "PostgreSQL", "Docker", "GitHub Actions CI/CD"],
       link: "https://maneja-tus-gastos-5dc4b.web.app/",
       github: "https://github.com/FernandoAlmaraz/maneja-tus-gastos-almaraz"
     },
@@ -160,14 +212,14 @@ export const projectsData = {
       title: "Microservicio Clima IA & N8N",
       description: "API REST desarrollada con FastAPI que integra OpenWeatherMap y Google Gemini para generar análisis climáticos inteligentes. Incluye propuestas de arquitectura RAG y flujos de automatización mediante N8N.",
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
-      tech: ["FastAPI", "Python", "Gemini AI", "N8N", "Docker"],
+      tech: ["FastAPI", "Python", "Gemini AI", "RAG", "n8n", "Docker"],
       github: "https://github.com/FernandoAlmaraz/Prueba-T-cnica-Coordinador-de-IA-y-Automatizaci-n---Fernando-Almaraz"
     },
     {
       title: "OneCore Full Stack AI (Prueba Técnica)",
       description: "API REST desarrollada con FastAPI para análisis de documentos usando Google Gemini AI, integración con AWS S3 para archivos CSV y autenticación JWT. Incluye suite con más de 100 pruebas unitarias.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop",
-      tech: ["FastAPI", "Python", "Google Gemini", "AWS S3", "Docker"],
+      tech: ["FastAPI", "Python", "Google Gemini", "AWS S3", "JWT", "Docker"],
       github: "https://github.com/FernandoAlmaraz/OneCore_Fullstack_AI_Test"
     },
     {
@@ -192,7 +244,7 @@ export const projectsData = {
       title: "Expense Manager (Monorepo)",
       description: "Fullstack educational project focused on Docker, GitHub Actions, and CI/CD. Modern architecture featuring an Angular 19 frontend on Firebase and a Node.js + PostgreSQL backend on Render.",
       image: "maneja-tus-gastos.png",
-      tech: ["Angular 19", "Node.js", "PostgreSQL", "Docker", "CI/CD"],
+      tech: ["Angular 19", "Node.js", "PostgreSQL", "Docker", "GitHub Actions CI/CD"],
       link: "https://maneja-tus-gastos-5dc4b.web.app/",
       github: "https://github.com/FernandoAlmaraz/maneja-tus-gastos-almaraz"
     },
@@ -200,14 +252,14 @@ export const projectsData = {
       title: "AI Weather API & N8N Automation",
       description: "REST API built with FastAPI integrating OpenWeatherMap and Google Gemini for intelligent weather analysis. Features RAG architecture proposals and advanced automation workflows using N8N.",
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
-      tech: ["FastAPI", "Python", "Gemini AI", "N8N", "Docker"],
+      tech: ["FastAPI", "Python", "Gemini AI", "RAG", "n8n", "Docker"],
       github: "https://github.com/FernandoAlmaraz/Prueba-T-cnica-Coordinador-de-IA-y-Automatizaci-n---Fernando-Almaraz"
     },
     {
       title: "OneCore Full Stack AI (Technical Test)",
       description: "REST API built with FastAPI for document analysis using Google Gemini AI, AWS S3 integration for CSV files, and JWT authentication. Includes a comprehensive suite of over 100 unit tests.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop",
-      tech: ["FastAPI", "Python", "Google Gemini", "AWS", "Docker"],
+      tech: ["FastAPI", "Python", "Google Gemini", "AWS S3", "JWT", "Docker"],
       github: "https://github.com/FernandoAlmaraz/OneCore_Fullstack_AI_Test"
     },
     {
@@ -223,15 +275,17 @@ export const projectsData = {
 
 export const skillsData = {
   es: [
-    { category: "Lenguajes", items: ["Python", "C#", "JavaScript", "TypeScript", "PHP", "SQL"] },
-    { category: "Frameworks & Libs", items: ["Angular", "Laravel", "Flask", "Fast API", "Astro", "Pandas", "NumPy"] },
-    { category: "Nube & Herramientas", items: ["Docker", "Git", "Linux", "Google Cloud Platform", "SAP DataSphere"] },
-    { category: "IA & Datos", items: ["LangChain", "LangGraph", "Scikit-learn", "Power BI", "N8N"] }
+    { category: "Lenguajes", items: ["Python", "TypeScript", "JavaScript", "PHP", "SQL", "C#", "Java", "ABAP"] },
+    { category: "IA & Automatización", items: ["LangChain", "LangGraph", "Google Gemini AI", "Arquitecturas RAG", "n8n", "Scikit-learn", "Chatbots Inteligentes", "Cursor"] },
+    { category: "Backend & Frameworks Web", items: ["FastAPI", "Laravel", "Flask", "Node.js", "Angular (v19)", "Astro"] },
+    { category: "ERP, Datos & BI", items: ["Odoo ERP", "Jeeves ERP", "SAP DataSphere", "SAP Analytics Cloud", "Power BI", "Looker Studio", "Pandas", "NumPy", "ETL", "Data Warehouse"] },
+    { category: "Nube, DevOps & Herramientas", items: ["Docker", "Google Cloud Platform", "AWS S3", "PostgreSQL", "Supabase", "Firebase", "Render", "Git", "GitHub Actions (CI/CD)", "Linux", "Kanban"] }
   ],
   en: [
-    { category: "Languages", items: ["Python", "C#", "JavaScript", "TypeScript", "PHP", "SQL"] },
-    { category: "Frameworks & Libs", items: ["Angular", "Laravel", "Flask", "Astro", "Pandas", "NumPy"] },
-    { category: "Cloud & DevTools", items: ["Docker", "Git", "Linux", "Google Cloud Platform", "SAP DataSphere"] },
-    { category: "AI & Data", items: ["LangChain", "LangGraph", "Scikit-learn", "Power BI", "N8N"] }
+    { category: "Languages", items: ["Python", "TypeScript", "JavaScript", "PHP", "SQL", "C#", "Java", "ABAP"] },
+    { category: "AI & Automation", items: ["LangChain", "LangGraph", "Google Gemini AI", "RAG Architectures", "n8n", "Scikit-learn", "Intelligent Chatbots", "Cursor"] },
+    { category: "Backend & Web Frameworks", items: ["FastAPI", "Laravel", "Flask", "Node.js", "Angular (v19)", "Astro"] },
+    { category: "ERP, Data & BI", items: ["Odoo ERP", "Jeeves ERP", "SAP DataSphere", "SAP Analytics Cloud", "Power BI", "Looker Studio", "Pandas", "NumPy", "ETL", "Data Warehouse"] },
+    { category: "Cloud, DevOps & Tools", items: ["Docker", "Google Cloud Platform", "AWS S3", "PostgreSQL", "Supabase", "Firebase", "Render", "Git", "GitHub Actions (CI/CD)", "Linux", "Kanban"] }
   ]
 };
