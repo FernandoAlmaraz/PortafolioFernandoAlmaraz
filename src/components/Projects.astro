@@ -149,7 +149,7 @@ const base = rawBase.endsWith("/") ? rawBase : rawBase + "/";
   .project-tech span {
     font-size: 0.75rem;
     color: var(--primary);
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(var(--primary-rgb), 0.1);
     padding: 0.25rem 0.75rem;
     border-radius: 999px;
     font-weight: 600;
@@ -175,10 +175,10 @@ const base = rawBase.endsWith("/") ? rawBase : rawBase + "/";
   .live-btn {
     background: var(--primary);
     color: white !important;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.2);
   }
   .live-btn:hover {
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 6px 20px rgba(var(--primary-rgb), 0.4);
     transform: translateY(-2px);
   }
   .repo-btn {
